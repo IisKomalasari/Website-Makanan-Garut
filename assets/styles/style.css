@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/*style navigasi */
+nav {
+  background-color: #c68100;
+  align-items: center;
+  display: flex;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+}
+
+nav ul {
+  display: inline;
+  list-style-type: none;
+  padding-left: 200px;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-inline: 20px;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+img {
+  padding-inline: 10px;
+}
+
+.search{
+  width: 300px;
+  float: left;
+  margin-left: 200px;
+  color: white;
+ 
+}
+
+.search .srch{
+  width: 200px;
+  height: 25px;
+  background: transparent;
+  border: 1px solid white;
+  font-size: 15px;
+  color:white;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  float: left;
+}
+
+.btn{
+  width: 100px;
+  height: 25px;
+  background: rgb(27, 80, 78);
+  border: 1px solid rgb(247, 250, 250);
+  font-size: 15px;
+  color: white;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.btn:focus{
+  outline: none;
+}
+
+.srch:focus{
+  outline: none;
+}
+
+/*style content*/
+#content {
+  float: left;
+  width: 75%;
+}
+.tema {
+  font-size: 25px;
+  padding: 60px;
+  background-image: url("../image/bck.png");
+  background-size: cover;
+  text-align: center;
+  color: white;
+  background-attachment: fixed;
+}
+
+.tema h1{
+  font-weight: 700;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+#beranda{
+  background-color: rgb(127, 225, 255);
+  padding-top: 3%;
+  height: auto;
+  padding-inline: 20px;
+}
+
+#beranda h3{
+  text-align: left;
+  padding: 0px 30x 10px;
+}
+
+#beranda h3::first-letter {
+  font-size: 70px;
+  font-weight: bold;
+  color: rgb(148, 69, 24);
+  font-family: 'Franklin Gothic Medium', sans-serif;
+}
+
+#beranda p{
+  color: black;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+h2,h3 {
+  color: #c64900;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#content1 {
+  float: left;
+  padding-inline: 5%;
+}
+
+#content1 h2{
+  padding-top: 4%;
+}
+#content1 p{
+  font-weight: 700;
+}
+
+#content1 .huruf{
+  font-weight: 700;
+  color: #c64f00;
+  font-size: 25px;
+}
+
+#content2 {
+  float: left;
+  width: 75%;
+}
+
+#tentang h4{
+  padding: 4% -0% 0% 0%;
+  font-weight: 700;
+  font-size: 30px; 
+  color: #c64900;
+  text-align: center
+}
+#tentang .image {
+  max-height: 200px;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 4%;
+  padding-left: 40%;
+}
+
+#contact{
+  padding-top: 2%;
+}
+
+#contact p{
+ text-align: left;
+}
+
+#contact .text{
+  text-align: center;
+ }
+#contact .tulis{
+  display: flex;
+  padding-left: 10%;
+  margin-top: -4%;
+}
+
+.icon{
+  width: 8%;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 1%;
+  align-items: center;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.identitas header {
+  text-align: center;
+}
+
+.identitas h2 {
+  padding-top: 4%;
+}
+
+.identitas img {
+  width: 200px;
+}
+
+.featured-image {
+  width: 20%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  box-shadow: 0 3px 8px 0 rgba(10, 148, 202, 0.678);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #0e323a;
+  text-align: center;
+  font-weight: bold;
+}
+
+ @media screen and (max-width: 1000px) {
+   #content,
+   aside {
+     width: 100%;
+     padding: 0;
+   }
+   .search{
+    display: none;
+   }
+ }
+ header {
+   display: inline;
+}
+
